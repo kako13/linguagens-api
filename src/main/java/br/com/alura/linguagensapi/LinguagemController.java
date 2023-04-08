@@ -7,7 +7,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,8 +20,7 @@ public class LinguagemController {
 
     @GetMapping
     public ResponseEntity<List<Linguagem>> listar() {
-        List<Linguagem> linguagens = respository.findAll();
-        linguagens.sort(Comparator.comparingInt(Linguagem::getRanking));
+        List<Linguagem> linguagens = respository.findAllByOrderByRanking();
         return ResponseEntity.ok(linguagens);
     }
 
