@@ -26,8 +26,8 @@ public class LinguagemController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    public Linguagem adicionar(@RequestBody Linguagem linguagem) {
-        return respository.save(linguagem);
+    public ResponseEntity<Linguagem> adicionar(@RequestBody Linguagem linguagem) {
+        return new ResponseEntity<>(respository.save(linguagem), HttpStatus.CREATED);
     }
 
     @ResponseStatus(HttpStatus.OK)
