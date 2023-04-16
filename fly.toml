@@ -1,0 +1,27 @@
+# fly.toml file generated for imersao-alura-linguagens on 2023-04-12T05:20:08-03:00
+
+app = "imersao-alura-linguagens"
+kill_signal = "SIGINT"
+kill_timeout = 5
+primary_region = "gru"
+
+[build]
+  image = "kaue13/imersao-alura-linguagens:linguagens-api-0.0.1-SNAPSHOT"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8080
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
