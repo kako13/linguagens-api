@@ -1,0 +1,321 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Linguagens API",
+    "description": "API desenvolvida durante a Imersão Java Alura",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Generated server url"
+    }
+  ],
+  "paths": {
+    "/linguagens/{linguagemId}": {
+      "get": {
+        "tags": [
+          "linguagens"
+        ],
+        "summary": "Realiza a consulta de uma linguagem cadastradas",
+        "operationId": "obterPorId",
+        "parameters": [
+          {
+            "name": "linguagemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "500": {
+            "description": "Erro ao realizar a consulta da linguagem",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Consulta relizada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Dados da requisição inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "linguagens"
+        ],
+        "summary": "Realiza a alteração de uma linguagem cadastrada",
+        "operationId": "atualizar",
+        "parameters": [
+          {
+            "name": "linguagemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Linguagem"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "500": {
+            "description": "Erro ao realizar a alteração da linguagem",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Alteração relizada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Dados da requisição inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "linguagens"
+        ],
+        "summary": "Realiza a exclusão de uma linguagem cadastradas",
+        "operationId": "remover",
+        "parameters": [
+          {
+            "name": "linguagemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Exclusão relizada com sucesso"
+          },
+          "422": {
+            "description": "Dados da requisição inválidos"
+          },
+          "400": {
+            "description": "Parâmetros inválidos"
+          },
+          "500": {
+            "description": "Erro ao realizar a exclusão da linguagem"
+          }
+        }
+      }
+    },
+    "/linguagens": {
+      "get": {
+        "tags": [
+          "linguagens"
+        ],
+        "summary": "Realiza a consulta das linguagens cadastradas",
+        "operationId": "listar",
+        "responses": {
+          "500": {
+            "description": "Erro ao consultar as linguagens",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Linguagem"
+                  }
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Consulta relizada com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Linguagem"
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Dados da requisição inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Linguagem"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Linguagem"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "linguagens"
+        ],
+        "summary": "Realiza o cadastro de uma linguagem",
+        "operationId": "adicionar",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Linguagem"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Cadastro relizado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erro ao cadastrar linguagem",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Dados da requisição inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Parâmetros inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Linguagem"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Linguagem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "ranking": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}
