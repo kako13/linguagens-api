@@ -1,0 +1,25 @@
+{
+  "unversionedId": "petstore/user",
+  "id": "petstore/user",
+  "title": "Users",
+  "description": "Users",
+  "source": "@site/docs/petstore/user.tag.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/user",
+  "permalink": "/docs/petstore/user",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "user",
+    "title": "Users",
+    "description": "Users",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "uploads an image",
+    "permalink": "/docs/petstore/upload-file"
+  }
+}

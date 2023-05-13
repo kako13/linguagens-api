@@ -1,0 +1,33 @@
+{
+  "unversionedId": "linguagens/linguagens-api",
+  "id": "linguagens/linguagens-api",
+  "title": "Linguagens API",
+  "description": "Swagger Ranking linguagens JSON",
+  "source": "@site/docs/linguagens/linguagens-api.info.mdx",
+  "sourceDirName": "linguagens",
+  "slug": "/linguagens/linguagens-api",
+  "permalink": "/linguagens-api/docs/linguagens/linguagens-api",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "linguagens-api",
+    "title": "Linguagens API",
+    "description": "Swagger Ranking linguagens JSON",
+    "sidebar_label": "Introduction",
+    "sidebar_position": 0,
+    "hide_title": true,
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "API",
+    "permalink": "/linguagens-api/docs/category/linguagens-api"
+  },
+  "next": {
+    "title": "Realiza a consulta de uma linguagem cadastradas",
+    "permalink": "/linguagens-api/docs/linguagens/obter-por-id"
+  }
+}
