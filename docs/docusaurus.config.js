@@ -147,7 +147,7 @@ const config = {
             linguagens: {
               specPath: "swagger/swagger.json",
               outputDir: "docs/linguagens",
-              downloadUrl: "http://localhost:8080/ranking/v3/api-docs",
+              downloadUrl: "https://imersao-alura-linguagens.fly.dev/ranking/v3/api-docs",
               sidebarOptions: {
                 groupPathsBy: "tag",
                 categoryLinkSource: "tag"
