@@ -13,11 +13,11 @@ const config = {
   baseUrl: "/linguagens-api/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+
   projectName: 'linguagens-api',
   organizationName: 'kako13',
-
-  deploymentBranch: 'documentacao',
-
+  deploymentBranch: 'documentacao-docusaurus',
+  trailingSlash: false,
 
   presets: [
     [
