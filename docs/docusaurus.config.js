@@ -18,7 +18,6 @@ const config = {
   organizationName: 'kako13',
   deploymentBranch: 'documentacao-docusaurus',
   trailingSlash: false,
-  customDocsPath: "docs",
 
   presets: [
     [
