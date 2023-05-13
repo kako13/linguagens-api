@@ -9,12 +9,14 @@ const config = {
   title: "Um ranking customizável",
   tagline: 'das melhores linguagens de programação',
   favicon: "img/gray/api-icon1.svg",
-  url: 'https://doc-imersao-alura-linguagens.fly.dev', // Your website URL
-  baseUrl: "/",
+  url: 'https://kako13.github.io', // Your website URL
+  baseUrl: "/linguagens-api/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   projectName: 'linguagens-api',
   organizationName: 'kako13',
+
+  deploymentBranch: 'documentacao',
 
 
   presets: [
