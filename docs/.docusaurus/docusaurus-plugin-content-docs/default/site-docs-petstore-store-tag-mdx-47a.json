@@ -1,0 +1,29 @@
+{
+  "unversionedId": "petstore/store",
+  "id": "petstore/store",
+  "title": "Petstore Orders",
+  "description": "Petstore Orders",
+  "source": "@site/docs/petstore/store.tag.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/store",
+  "permalink": "/docs/petstore/store",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "store",
+    "title": "Petstore Orders",
+    "description": "Petstore Orders",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Place an order for a pet",
+    "permalink": "/docs/petstore/place-order"
+  },
+  "next": {
+    "title": "Subscribe to the Store events",
+    "permalink": "/docs/petstore/subscribe-to-the-store-events"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "unversionedId": "petstore/pet",
+  "id": "petstore/pet",
+  "title": "Pets",
+  "description": "Pets",
+  "source": "@site/docs/petstore/pet.tag.mdx",
+  "sourceDirName": "petstore",
+  "slug": "/petstore/pet",
+  "permalink": "/docs/petstore/pet",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "pet",
+    "title": "Pets",
+    "description": "Pets",
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "New pet",
+    "permalink": "/docs/petstore/new-pet"
+  },
+  "next": {
+    "title": "Place an order for a pet",
+    "permalink": "/docs/petstore/place-order"
+  }
+}

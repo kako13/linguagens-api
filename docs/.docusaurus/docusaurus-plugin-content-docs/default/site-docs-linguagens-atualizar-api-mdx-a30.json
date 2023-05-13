@@ -1,0 +1,250 @@
+{
+  "unversionedId": "linguagens/atualizar",
+  "id": "linguagens/atualizar",
+  "title": "Realiza a alteração de uma linguagem cadastrada",
+  "description": "Realiza a alteração de uma linguagem cadastrada",
+  "source": "@site/docs/linguagens/atualizar.api.mdx",
+  "sourceDirName": "linguagens",
+  "slug": "/linguagens/atualizar",
+  "permalink": "/linguagens-api/docs/linguagens/atualizar",
+  "draft": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "atualizar",
+    "title": "Realiza a alteração de uma linguagem cadastrada",
+    "description": "Realiza a alteração de uma linguagem cadastrada",
+    "sidebar_label": "Realiza a alteração de uma linguagem cadastrada",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": {
+      "tags": [
+        "linguagens"
+      ],
+      "operationId": "atualizar",
+      "parameters": [
+        {
+          "name": "linguagemId",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "requestBody": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "ranking": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              },
+              "title": "Linguagem"
+            }
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "200": {
+          "description": "Alteração relizada com sucesso",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "ranking": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                },
+                "title": "Linguagem"
+              }
+            }
+          }
+        },
+        "400": {
+          "description": "Parâmetros inválidos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "ranking": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                },
+                "title": "Linguagem"
+              }
+            }
+          }
+        },
+        "422": {
+          "description": "Dados da requisição inválidos",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "ranking": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                },
+                "title": "Linguagem"
+              }
+            }
+          }
+        },
+        "500": {
+          "description": "Erro ao realizar a alteração da linguagem",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  },
+                  "ranking": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                },
+                "title": "Linguagem"
+              }
+            }
+          }
+        }
+      },
+      "description": "Realiza a alteração de uma linguagem cadastrada",
+      "method": "put",
+      "path": "/linguagens/{linguagemId}",
+      "servers": [
+        {
+          "url": "https://imersao-alura-linguagens.fly.dev/ranking",
+          "description": "Generated server url"
+        }
+      ],
+      "jsonRequestBodyExample": {
+        "id": "string",
+        "title": "string",
+        "image": "string",
+        "ranking": 0
+      },
+      "info": {
+        "title": "Linguagens API",
+        "description": "Swagger Ranking linguagens JSON \n\n## Introduction  \nEste é um exemplo do Ranking de linguagens. \n\n## Especificação OpenAPI  \nEssa API é documentada no **formato OpenAPI**. O projeto foi **extendido** e utiliza as features deste [template](https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs) e do [Docusaurus](https://docusaurus.io). A dependência utilizada doi a `springdoc-openapi-starter-webmvc-ui` na `versão v2` (https://springdoc.org/v2/), conforme a recomendação da [documentação](https://springdoc.org/v2/), quando utilizado `spring-boot v3`. \n\nEncontre mais sobre o Swagger em [http://swagger.io](http://swagger.io) ou em [irc.freenode.net, #swagger](http://swagger.io/irc/). \n\n## Proposta  \nA proposta desta API é fornecer um ranking fictício customizável das melhores linguagens de programação. \n\nAdministre o ranking conforme seus critérios. \n\n\n\nSim! É simples mesmo!",
+        "version": "1.0"
+      },
+      "postman": {
+        "name": "Realiza a alteração de uma linguagem cadastrada",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "linguagens",
+            ":linguagemId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "",
+              "key": "linguagemId"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "PUT",
+        "body": {
+          "mode": "raw",
+          "raw": "\"\"",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    "sidebar_class_name": "put api-method",
+    "info_path": "docs/linguagens/linguagens-api",
+    "custom_edit_url": null
+  },
+  "sidebar": "openApiSidebar",
+  "previous": {
+    "title": "Realiza a consulta de uma linguagem cadastradas",
+    "permalink": "/linguagens-api/docs/linguagens/obter-por-id"
+  },
+  "next": {
+    "title": "Realiza a exclusão de uma linguagem cadastradas",
+    "permalink": "/linguagens-api/docs/linguagens/remover"
+  }
+}
