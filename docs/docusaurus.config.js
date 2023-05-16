@@ -16,7 +16,7 @@ const config = {
 
   projectName: 'linguagens-api',
   organizationName: 'kako13',
-  deploymentBranch: 'documentacao-docusaurus',
+  deploymentBranch: 'doc',
   trailingSlash: false,
 
   presets: [
@@ -130,7 +130,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Linguagens API. Built with Docusaurus.`
+        copyright: `${new Date().getFullYear()} Linguagens API. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
