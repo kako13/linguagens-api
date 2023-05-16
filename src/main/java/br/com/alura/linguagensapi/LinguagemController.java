@@ -27,6 +27,7 @@ public class LinguagemController {
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos"),
             @ApiResponse(responseCode = "500", description = "Erro ao consultar as linguagens")
     })
+    @CrossOrigin(origins = "${cors.origns}")
     @GetMapping
     public ResponseEntity<List<Linguagem>> listar() {
         List<Linguagem> linguagens = this.respository.findAllByOrderByRanking();
@@ -53,6 +54,7 @@ public class LinguagemController {
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos"),
             @ApiResponse(responseCode = "500", description = "Erro ao realizar a alteração da linguagem")
     })
+    @CrossOrigin(origins = "${cors.origns}")
     @ResponseStatus(HttpStatus.OK)
     @PutMapping(value = {"/{linguagemId}"}, consumes = {"application/json"}, produces = {"application/json"})
     public Linguagem atualizar(@PathVariable String linguagemId, @RequestBody Linguagem linguagem) {
@@ -68,6 +70,7 @@ public class LinguagemController {
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos"),
             @ApiResponse(responseCode = "500", description = "Erro ao realizar a consulta da linguagem")
     })
+    @CrossOrigin(origins = "${cors.origns}")
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(value = {"/{linguagemId}"}, produces = {"application/json"})
     public Linguagem obterPorId(@PathVariable String linguagemId) {
@@ -81,6 +84,7 @@ public class LinguagemController {
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos"),
             @ApiResponse(responseCode = "500", description = "Erro ao realizar a exclusão da linguagem")
     })
+    @CrossOrigin(origins = "${cors.origns}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping({"/{linguagemId}"})
     public void remover(@PathVariable String linguagemId) {
