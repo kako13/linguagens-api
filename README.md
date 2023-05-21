@@ -37,8 +37,8 @@ Essa API é documentada no **formato OpenAPI**. Este projeto foi **extendido** e
 
 Como dependência utilizei `springdoc-openapi-starter-webmvc-ui` na `versão v2`, conforme a recomendado na [documentação](https://springdoc.org/v2/) ao utilizar `spring-boot v3`.
 
-Confira a documentação [linguagens-api-doc](https://kako13.github.io/linguagens-api-doc).
+Confira a **[documentação completa](https://kako13.github.io/linguagens-api-doc)** e seu respectivo fonte em [documentação completa](https://github.com/kako13/linguagens-api-doc).
 
 Espero que goste do projeto e sinta-se à vontade para sugerir melhorias!
 
-###### *Os códigos de retorno ainda estão em desenvolvimento
+###### *Os códigos e mensagens customizadas de retorno ainda estão em desenvolvimento
