@@ -4,13 +4,13 @@
 
 A proposta desta API é fornecer um **ranking fictício e customizável** das melhores linguagens de programação.
 
-Permite administrar (
+Permite que o usuário administre (
 **[registrar](https://kako13.github.io/linguagens-api-doc/docs/linguagens/adicionar/)**,
 **[alterar](https://kako13.github.io/linguagens-api-doc/docs/linguagens/atualizar/)**,
 **[remover](https://kako13.github.io/linguagens-api-doc/docs/linguagens/remover)**,
 **[listar](https://kako13.github.io/linguagens-api-doc/docs/linguagens/listar/)** e
 **[buscar](https://kako13.github.io/linguagens-api-doc/docs/linguagens/obter-por-id/)**
-)* de acordo com o critério do usuário
+)* de acordo com seu critério
 
 Sim! É simples mesmo!
 
@@ -20,9 +20,12 @@ O desenvolvimento deste projeto foi uma demanda proposta durante a Imersão Java
 
 Trata-se de uma API para ser consumida por outra aplicação **([alura-stickers](https://github.com/kako13/alura-stickers))**.
 
-Mas também pode ser testada via documentação, swagger ou swagger editor.
+Mas também pode ser testada via:
 
-Encontre mais sobre o Swagger em **[#swagger-editor](https://editor.swagger.io)** ou em **[http://swagger.io](http://swagger.io)**.
+#### **[- documentação docusaurus](https://kako13.github.io/linguagens-api-doc)** 
+#### **[- documentação swagger-ui](https://imersao-alura-linguagens.fly.dev/ranking/swagger-ui/index.html#/)**
+#### **[- swagger editor](https://editor.swagger.io)** (baixando o **[.json](https://imersao-alura-linguagens.fly.dev/ranking/v3/api-docs)** ou **[.yaml](https://imersao-alura-linguagens.fly.dev/ranking/v3/api-docs.yaml)** do projeto e colando no área de edição)
+
 
 ## Tecnologias 
 
