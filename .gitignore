@@ -13,6 +13,9 @@ target/
 .springBeans
 .sts4-cache
 
+## FLYIO
+fly.toml
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
